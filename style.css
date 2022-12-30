@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-orange: hsl(31, 77%, 52%);
+  --darkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+  --transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --verylightgray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--verylightgray);
+}
+
+.main-container {
+  display: flex;
+  width: 60%;
+  height: 70%;
+}
+
+.content-cars {
+  padding: 3.5rem;
+  width: 100%;
+}
+
+.content-cars h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.content-cars p {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparentwhite);
+  line-height: 2.5rem;
+  margin-bottom:10rem;
+}
+
+.content-cars button {
+  padding: 1.3rem;
+  width: 65%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  transition: 1s ease;
+}
+
+.content-cars button:hover {
+  background: transparent;
+  color: var(--transparentwhite);
+  border: var(--transparentwhite) 0.1rem solid;
+}
+
+.carOne {
+  background: var(--bg-orange);
+}
+
+.carOne button {
+  color: var(--bg-orange);
+}
+
+.carTwo {
+  background: var(--darkcyan);
+}
+
+.carTwo p,
+.carThree p {
+  width: 105%;
+}
+
+.carTwo button {
+  color: var(--darkcyan);
+}
+
+.carThree {
+  background: var(--verydarkcyan);
+}
+
+.carThree button {
+  color: var(--verydarkcyan);
+}
+
+
+@media (min-width: 1400px) {
+     .main-container {
+        
+        height: 40%;
+      } 
+}
