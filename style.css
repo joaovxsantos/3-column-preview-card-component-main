@@ -98,8 +98,12 @@ body {
 
 
 @media (min-width: 1400px) {
-     .main-container {
-        
-        height: 40%;
-      } 
+  .main-container {
+    display: flex;
+    width:42%;
+    height: 45%;
+  }
+  
 }
+
+
