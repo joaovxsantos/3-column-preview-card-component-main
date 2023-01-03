@@ -27,7 +27,6 @@ body {
   display: flex;
   width: 100%;
   max-width: 800px;
-  background: red;
 }
 
 .content-cars {
@@ -95,4 +94,12 @@ body {
 
 .carThree button {
   color: var(--verydarkcyan);
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+    width: 40vh;
+    height: 100vh;
+  }
 }
