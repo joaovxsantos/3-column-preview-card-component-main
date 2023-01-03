@@ -65,7 +65,7 @@ body {
 .content-cars button:hover {
   background: transparent;
   color: var(--transparentwhite);
-  border: var(--transparentwhite) 0.1rem solid;
+  outline: 0.2rem solid hsla(0, 0%, 100%, 0.75);
 }
 
 .carOne {
@@ -95,14 +95,4 @@ body {
 
 .carThree button {
   color: var(--verydarkcyan);
-}
-
-@media (max-width: 1200px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  :root {
-    font-size: 35%;
-  }
 }
