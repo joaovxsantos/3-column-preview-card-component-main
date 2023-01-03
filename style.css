@@ -25,8 +25,9 @@ body {
 
 .main-container {
   display: flex;
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  max-width: 800px;
+  background: red;
 }
 
 .content-cars {
@@ -47,7 +48,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   color: var(--transparentwhite);
   line-height: 2.5rem;
-  margin-bottom:10rem;
+  margin-bottom: 10rem;
 }
 
 .content-cars button {
@@ -96,19 +97,12 @@ body {
   color: var(--verydarkcyan);
 }
 
-
-@media (min-width: 1400px) {
+@media (max-width: 1200px) {
   .main-container {
-    display: flex;
-    width:42%;
-    height: 45%;
+    flex-direction: column;
   }
-  
-}
 
-@media (max-width:1200px){
-  .main-container{
-  flex-direction: column;
- 
-}
+  :root {
+    font-size: 35%;
+  }
 }
