@@ -69,6 +69,7 @@ body {
 
 .carOne {
   background: var(--bg-orange);
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .carOne button {
@@ -90,6 +91,7 @@ body {
 
 .carThree {
   background: var(--verydarkcyan);
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .carThree button {
